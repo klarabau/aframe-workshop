@@ -23,6 +23,7 @@ function spin(){
 			rotationSpeed -= 0.01;
 		}
 	} 
+	console.log(rotationSpeed);
 }
 
 setInterval(spin, 16); //equivalent to 60 fps
