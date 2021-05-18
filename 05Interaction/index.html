@@ -27,9 +27,9 @@
         material="src: #wood"
         shadow 
         animation__mouseenter="
-          property: components.visible; 
-          from: true;
-          to: false;
+          property: components.material.material.src; 
+          from: #wood;
+          to: #woodsketch;
           startEvents: mouseenter; 
           dur: 500;"
         animation__mouseleave="
