@@ -13,7 +13,6 @@
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
           <img id="grass" src="images/grass.jpg" />
-          <img id="woodsketch" src="images/woodsketch.jpg" />
       </a-assets>
 
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
@@ -27,19 +26,15 @@
         material="src: #wood"
         shadow 
         animation__mouseenter="
-          property: components.material.material.src; 
-          to: #woodsketch;
-          startEvents: mouseenter; "
+          property: components.material.material.wireframe; 
+          from: false;
+          to: true;
+          startEvents: mouseenter"
         animation__mouseleave="
           property: components.material.material.wireframe; 
           to: false; 
-          startEvents: mouseleave; ">  
+          startEvents: mouseleave">  
       </a-box>
-
-      <!--           property: components.material.material.wireframe; 
-          from: false;
-          to: true;
-          startEvents: mouseenter; " -->
 
       <a-box id="myOtherBox" 
         position="2 1 -3" 
