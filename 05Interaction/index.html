@@ -27,15 +27,19 @@
         material="src: #wood"
         shadow 
         animation__mouseenter="
-          property: components.material.material.wireframe; 
-          from: false;
-          to: true;
+          property: components.material.material.src; 
+          to: #woodsketch;
           startEvents: mouseenter; "
         animation__mouseleave="
           property: components.material.material.wireframe; 
           to: false; 
           startEvents: mouseleave; ">  
       </a-box>
+
+      <!--           property: components.material.material.wireframe; 
+          from: false;
+          to: true;
+          startEvents: mouseenter; " -->
 
       <a-box id="myOtherBox" 
         position="2 1 -3" 
