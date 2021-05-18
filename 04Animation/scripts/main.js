@@ -24,10 +24,10 @@ function spin(){
 
 	if (switchSpeed == true){
 		rotationSpeed -= 0.001;
-		myOtherBox.object3D.position.y -= rotationSpeed;
+		myOtherBox.object3D.position.y -= 0.05;
 	} else {
 		rotationSpeed += 0.001;
-		myOtherBox.object3D.position.y += rotationSpeed;
+		myOtherBox.object3D.position.y += 0.05;
 	}
 
 	
