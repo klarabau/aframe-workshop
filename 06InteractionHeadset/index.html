@@ -20,8 +20,10 @@
       <a-camera>
 
         <a-entity id="mouseCursor"
-          cursor="fuse: false">
+          cursor="fuse: true; fuseTimeout: 3000">
         </a-entity>
+
+        <!-- fuse: false leads to growth everytime I click, fuse: true leads to growth after the set time after the cursor (re-)enters the object -->
 
         <a-ring id="cursorRing" 
           position="0 0 -1"
@@ -29,6 +31,7 @@
           radius-outer= "0.025"
           material="color: blue; shader: flat">
         </a-ring>
+
 
       </a-camera>
       
