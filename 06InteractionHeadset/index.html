@@ -19,18 +19,23 @@
 
       <a-camera>
 
-        <!-- Cursor representation -->
         <a-entity id="mouseCursor"
-          cursor="fuse: true; fuseTimeout: 500">
+          cursor="fuse: true; fuseTimeout: 1500">
         </a-entity>
 
-        <!-- Cursor visualization -->
-        <a-box id="cursorRing" 
+        <a-ring id="cursorRing" 
+          position="0 0 -1"
+          radius-inner= "0.005"
+          radius-outer= "0.025"
+          material="color: blue; shader: flat">
+        </a-ring>
+
+        <!-- <a-box id="cursorRing" 
           position="0 0 -1"
           width="0.01"
           height="0.01"
           material="color: blue; shader: flat">
-        </a-box>
+        </a-box> -->
 
       </a-camera>
       
